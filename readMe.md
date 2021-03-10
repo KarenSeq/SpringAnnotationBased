@@ -15,3 +15,6 @@ You can use @Autowired annotation on properties to get rid of the setter methods
 - @Qualifier is used along with @Autowired to specify the name of the bean.
 
 - @Resource, @PostConstruct(init-method alternative) & @PreDestroy(destroy-method alternative) are included under JSR-250 annotations.
+
+##AOP
+https://www.javatpoint.com/spring-aop-aspectj-annotation-example
