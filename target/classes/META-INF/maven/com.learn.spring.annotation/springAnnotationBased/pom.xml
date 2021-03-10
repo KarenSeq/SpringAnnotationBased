@@ -12,6 +12,7 @@
 	<properties>
 		<spring.context.version>5.3.4</spring.context.version>
 		<lombok.version>1.18.16</lombok.version>
+		<aspect.version>5.3.4</aspect.version>
 	</properties>
 
 	<dependencies>
@@ -29,6 +30,14 @@
 			<version>${lombok.version}</version>
 		</dependency>
 		<!-- Lombok dependency for getter/setters etc -->
+		<!-- For AspectJ -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${aspect.version}</version>
+		</dependency>
+		<!-- For AspectJ -->
+
 	</dependencies>
 
 	<build>

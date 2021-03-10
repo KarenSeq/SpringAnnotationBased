@@ -3,6 +3,7 @@ package com.learn.spring.annotation;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.learn.spring.annotation.log.model.Log;
 import com.learn.spring.annotation.model.Academics;
 import com.learn.spring.annotation.model.Book;
 
@@ -27,6 +28,10 @@ public class SpringApplication {
 		System.out.println("-----------------------Required--------------------------");
 		Academics academics1 = context.getBean("academics1", Academics.class);
 		System.out.println(academics1.getTitle());
+		
+		Log log1 = context.getBean("log1", Log.class);
+		log1.setMessage("test msg");
+		log1.getMessage();
 
 	}
 
